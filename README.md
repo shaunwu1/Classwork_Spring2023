@@ -11,19 +11,15 @@ The database will contain:
 * Patient Name
 * Patient Age
 * Patient Bloodtype
- - A+
- - A-
- - B+
- - B-
-    * more
+  - A+
+  - A-
+  - B+
+  - B-
+  - AB+
+  - AB-
 
-$$ Future additions
+## Future additions
 1. Patient address
 1. Patient Gender
 1. Medical Record Number
 
-The variable name is'x_variable'.
-
-...
-Def function(x):
-...print(x)
