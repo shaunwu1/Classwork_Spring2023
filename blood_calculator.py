@@ -39,6 +39,17 @@ def HDL_analysis(HDL_int):
         answer = "Low"
     return answer
 
+def LDL_analysis(LDL_int):
+    if LDL_int < 130:
+        answer = "Normal"
+    elif 130 <= LDL_int <= 159:
+        answer = "Borderline High"
+    elif 160 <= LDL_int <= 189:
+        answer = "High"
+    elif LDL_int >= 190:
+        answer = "Very High"
+    return answer
+
 def HDL_output(HDL_value, HDL_analy):
     print("The HDL result of {} is considered {}".format(HDL_value, HDL_analy))
     return
