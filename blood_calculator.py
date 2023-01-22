@@ -24,7 +24,12 @@ def HDL_driver():
     HDL_in = HDL_input()
     HDL_analy = HDL_analysis(HDL_in)
     HDL_output(HDL_in, HDL_analy)
-    
+
+def LDL_driver():
+    LDL_in = LDL_input()
+    LDL_analy = LDL_analysis(LDL_in)
+    LDL_output(LDL_in, LDL_analy)
+
 def HDL_input():
     HDL_value = input("Enter the HDL Result:")
     HDL_value = int(HDL_value)
