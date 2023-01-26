@@ -1,3 +1,4 @@
 .DS_store
 __pycache__
+myvenv
 .ipynb_checkpoints
