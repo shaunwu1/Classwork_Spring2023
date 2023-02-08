@@ -6,6 +6,7 @@ Created on Fri Jan 20 12:25:02 2023
 @author: shaun
 """
 
+
 def interface():
     print("Blood calculator")
     keep_running = True
@@ -25,6 +26,7 @@ def interface():
         elif choice == "3":
             cholesterol_driver()
         print("Program ending")
+
 
 def HDL_driver():
     HDL_in = HDL_input()
@@ -81,7 +83,7 @@ def cholesterol_analysis(total_int):
         answer = "Normal"
     elif 200 <= total_int <= 239:
         answer = "Borderline High"
-    elif total_int>=240:
+    elif total_int >= 240:
         answer = "High"
     return answer
 
@@ -94,6 +96,9 @@ def LDL_output(LDL_value, LDL_analy):
     return
 
 def total_output(total_value, total_analy):
-    print("The total cholesterol result of {} is considered {}".format(total_value, total_analy))
+    print("The total cholesterol result of {} is considered {}".
+          format(total_value, total_analy))
     return
-interface()
+
+if __name__ == "__main__":
+    interface()
