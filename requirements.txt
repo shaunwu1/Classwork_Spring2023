@@ -1,1 +1,2 @@
-jupyter
+pytest==7.2.1
+pytest-pycodestyle==2.10.0
